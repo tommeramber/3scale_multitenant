@@ -81,7 +81,6 @@
     url: "{{ threescale_template }}"
     dest: "{{ modified_template_path }}"
     force: yes
-  when: api_project_result is failed
 
 - name: Place all deployments in a paused state
   replace:
